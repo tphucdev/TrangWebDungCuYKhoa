@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/Admin_style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../IMG/favicon.png" type="image/x-icon">
+    <title>Hệ thống quản lý Y Khoa</title>
+</head>
+<body>
+    <div id="root">
+        <div class="grid">
+            <div class="row">
+                <div class="col l-2 m-2 c-12">
+                    <div class="navbar">
+                        <h1>Hệ thống quản lý</h1>
+                        <ul>
+                            <li class="navbar-li ">
+                                <a href="">
+                                    <i class="fa-solid fa-house"></i>Tranh chủ
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý tài khoản
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý nhân viên
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý khách hàng
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý sản phẩm
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý danh mục
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý bình luận
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Quản lý đơn hàng
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="">
+                                    <i class="fa-solid fa-sliders"></i>Báo cáo thống kê
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-10 m-10 c-12">
+                    <div class="container__account container__staff">
+                        <h1>Quản lý sản phẩm</h1>
+                        <div class="row">
+                            <div class="container__staff-header">
+                                <div class="container__staff-search">
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="container__staff-add">
+                                    <button class="container__staff-add-btn"><div><i class="fa-solid fa-plus"></i></div>Thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__staff-table">
+                            <table>
+                                <thead>
+                                    <tr >
+                                        <th>STT</th>
+                                        <th>ảnh</th>
+                                        <th>Tên nhân viên</th>
+                                        <th>Ngày sinh</th>
+                                        <th>Giới tính</th>
+                                        <th>CMND/CCCD</th>
+                                        <th>Diện thoại</th>
+                                        <th>Địa chỉ</th>
+                                        <th>Vị trí</th>
+                                        <th>Thao tác</th>
+                                        <th>chọn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img src="../IMG/NV1.jfif" alt="" class="container__staff-img">
+                                            </td>
+                                            <td>Phuccu</td>
+                                            <td>02/05/2002</td>
+                                            <td>Nam</td>
+                                            <td>331898170</td>
+                                            <td>0704825932</td>
+                                            <td>Vĩnh long</td>
+                                            <td>Nhân vien bán hàng</td>
+                                            <td>
+                                                <div class="container__account-btn ">
+                                                    <button class="container__account-btn-update">Sửa</button>
+                                                    <button class="container__account-btn-delete ">Xoá</button>
+                                                </div>
+                                            </td>
+                                            <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="../IMG/bộ xet nghiệm.jpg" alt="" class="container__staff-img">
+                                        </td>
+                                        <td>Phuccu</td>
+                                        <td>02/05/2002</td>
+                                        <td>Nam</td>
+                                        <td>331898170</td>
+                                        <td>0704825932</td>
+                                        <td>Vĩnh long</td>
+                                        <td>Nhân vien bán hàng</td>
+                                        <td>
+                                            <div class="container__account-btn ">
+                                                <button class="container__account-btn-update">Sửa</button>
+                                                <button class="container__account-btn-delete">Xoá</button>
+                                            </div>
+                                        </td>
+                                        <td><input type="checkbox"></td>
+    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="../IMG/bộ xet nghiệm.jpg" alt="" class="container__staff-img">
+                                    </td>
+                                    <td>Phuccu</td>
+                                    <td>02/05/2002</td>
+                                    <td>Nam</td>
+                                    <td>331898170</td>
+                                    <td>0704825932</td>
+                                    <td>Vĩnh long</td>
+                                    <td>Nhân vien bán hàng</td>
+                                    <td>
+                                        <div class="container__account-btn">
+                                            <button class="container__account-btn-update">Sửa</button>
+                                            <button class="container__account-btn-delete">Xoá</button>
+                                        </div>
+                                    </td>
+                                    <td><input type="checkbox"></td>
+
+                            </tr>
+                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__staff-modal">
+            <div class="container__staff-modal-main">
+                <h1>Thêm mới sản phẩm</h1>
+                <div class="container__staff-modal-main-input">
+                    <select name="" id="">
+                        <option value="">---Chọn danh mục---</option>
+                    </select>
+                </div>
+                <div class="container__staff-modal-main-input container__staff-modal-main-input-full">
+                    <input type="text" placeholder="Tên sản phẩm...">
+                </div>
+                <div class="container__staff-modal-main-input container__staff-modal-main-input-full">
+                    <input type="text" placeholder="Giá sản phẩm...">
+                </div>
+                <div class="container__staff-modal-main-input container__staff-modal-main-input-full">
+                    <input type="text" placeholder="Mô tả...">
+                </div>
+                <div class="container__staff-modal-main-input">
+                    <input type="file">
+                </div>
+                <button class="container__staff-modal-main-btn">Thêm</button>
+                <i class="fa-solid fa-xmark icon-close-addStaff"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const modalAdd = document.querySelector('.container__staff-modal');
+    const modalMain = document.querySelector('.container__staff-modal-main');
+    const btnAdd = document.querySelector('.container__staff-add-btn');
+    const btnClose = document.querySelector('.icon-close-addStaff');
+
+    btnAdd.onclick = function(e) {
+        console.log(123)
+        modalAdd.classList.add('open');
+        e.preventDefault();
+    }
+
+    btnClose.onclick = function() {
+        modalAdd.classList.remove('open');
+    }
+
+    modalAdd.onclick = function() {
+        modalAdd.classList.remove('open');
+    }
+
+    modalMain.onclick = function(e) {
+        e.stopPropagation();
+    }
+
+
+</script>
+</html>

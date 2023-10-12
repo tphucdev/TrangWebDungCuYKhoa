@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dụng Cụ Y Khoa</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__navbar">
+                    <div class="header__navbar-items">
+                         <ul class="header__navbar-items-ul">
+                             <li class="header__navbar-items-li" ><a href="./index.html" class="header__navbar-items-link">Trang chủ</a></li>
+
+                             <li  class="header__navbar-items-li header__navbar-items-li__product" >
+                                <a href="" class="header__navbar-items-link">Sản phẩm 
+                                    <i class="fa-solid fa-chevron-down header__navbar-items-link-icon"></i>
+                                </a>
+                                <!-- Modal -->
+                                <ul class="header__navbar-items-li__modal-product">
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Vòng Đeo Tay Ổn Định Huyết Áp</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Máy Đo Huyết Áp</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Máy Đo Đường Huyết</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Que Thử Y Tế</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Vớ Y Khoa</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Dụng Cụ Y Khoa</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Túi Chườm Đa Năng</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-product-link">
+                                        <a href="">Dụng Cụ Thí Nghiệm</a>
+                                    </li>
+                                </ul>
+                                <!-- End Modal -->
+                            </li>
+
+                             <li class="header__navbar-items-li" ><a href="" class="header__navbar-items-link" >Chăm sóc</a></li>
+                             <li class="header__navbar-items-li header__navbar-items-li__policy" >
+                                <a href="" class="header__navbar-items-link">Chính sách <i class="fa-solid fa-chevron-down header__navbar-items-link-icon"></i></a>
+                                <!-- Modal -->
+                                <ul class="header__navbar-items-li__modal-policy">
+                                    <li class="header__navbar-items-li__modal-policy-link">
+                                        <a href="">Chính sách mua hàng</a>
+                                    </li>
+                                    <li class="header__navbar-items-li__modal-policy-link">
+                                        <a href="">Chính sách đổi trả</a>
+                                    </li>
+                                   
+                                </ul>
+                                <!-- End Modal -->
+                            </li>
+                             <li class="header__navbar-items-li" ><a href="" class="header__navbar-items-link">Liên hệ</a></li>
+                         </ul>
+                    </div>
+                    <div class="header__navbar-logo">
+                        <a href="./index.html">
+                            <img src="./IMG/Y Khoa.png" alt="" class="header__navbar-logo-img">
+                        </a>
+                    </div>
+                    <div class="header__navbar-action">
+                        <div class="header__navbar-action__search">
+                            <i class='bx bx-search header__navbar-action__search-icon'></i>
+                            <input type="text" placeholder="TÌM KIẾM SẢN PHẨM" class="header__navbar-action__search-input">
+                        </div>
+                        <div class="header__navbar-action__icon header__navbar-action__icon-user">
+                            <i class='bx bx-user header-icon'></i>
+                            
+                            <ul class="header__navbar-action__icon-user-ul">
+                                <li>
+                                    <a href="" class="header__navbar-action__icon-user-ul-link ">
+                                        Tài khoản của tôi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./Info_user.html" class="container__info-user-list-name-ul-li header__navbar-action__icon-user-ul-link-link ">
+                                        <i class='bx bx-user'></i>
+                                        Thông tin tài khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./Manager_bill.html" class="container__info-user-list-name-ul-li header__navbar-action__icon-user-ul-link-link">
+                                        <i class='bx bx-notepad'></i>
+                                        Quản lý đơn hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./location.html" class="container__info-user-list-name-ul-li header__navbar-action__icon-user-ul-link-link ">
+                                        <i class='bx bx-location-plus'></i>
+                                        Số địa chỉ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="container__info-user-list-name-ul-li  header__navbar-action__icon-user-ul-link-link">
+                                        <i class='bx bxs-hand-right' ></i>
+                                        Hỗ trợ - Y Khoa
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="cart-check" class="header__navbar-action__icon header__navbar-action__icon-modal">
+                            <i class='bx bx-basket header-icon'></i>
+                            <div class="header__navbar-action__icon-modal-number">
+                                <span>0</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" id="cart-check" class="check-cart-input" style="display: none;">
+                        
+                        <div  class="header__navbar-action__icon-modal-cart">
+                            <div class="header__navbar-action__icon-modal-cart__header">
+                                <div class="header__navbar-action__icon-modal-cart__header-title">
+                                    <h1>Giỏ hàng</h1>
+                                    <span>5</span>
+                                </div>
+                                <label for="cart-check" class="header__navbar-action__icon-modal-cart__header-close">
+                                    <i class="fa-solid fa-xmark header__navbar-action__icon-modal-cart__header-close-icon"></i>
+                                </label>
+                            </div>
+                            <div class="header__navbar-action__icon-modal-cart__content">
+                                <ul>
+                                    <li>
+                                        <div class="header__navbar-action__icon-modal-cart__content-link">
+                                            <div class="header__navbar-action__icon-modal-cart__content-link__items">
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-img">
+                                                    <img src="./IMG/bộ xet nghiệm.jpg" alt="">
+                                                </div>
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-content">
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title">
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-text">
+                                                            <p>Bộ xét nghiệm</p>
+                                                            <p>Mô tả</p>
+                                                        </div>
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close">
+                                                            <i class="fa-solid fa-xmark header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price">
+                                                        <!-- <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-input"> -->
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-minus
+                                                             header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </div>
+                                                            <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-value">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-add 
+                                                            header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span class="header__navbar-action__icon-modal-cart__content-link__items-content-price-modify">
+                                                            2.121.000đ
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="header__navbar-action__icon-modal-cart__content-link">
+                                            <div class="header__navbar-action__icon-modal-cart__content-link__items">
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-img">
+                                                    <img src="./IMG/bộ xet nghiệm.jpg" alt="">
+                                                </div>
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-content">
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title">
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-text">
+                                                            <p>Bộ xét nghiệm</p>
+                                                            <p>Mô tả</p>
+                                                        </div>
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close">
+                                                            <i class="fa-solid fa-xmark header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price">
+                                                        <!-- <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-input"> -->
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-minus
+                                                             header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </div>
+                                                            <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-value">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-add 
+                                                            header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span class="header__navbar-action__icon-modal-cart__content-link__items-content-price-modify">
+                                                            2.121.000đ
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="header__navbar-action__icon-modal-cart__content-link">
+                                            <div class="header__navbar-action__icon-modal-cart__content-link__items">
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-img">
+                                                    <img src="./IMG/bộ xet nghiệm.jpg" alt="">
+                                                </div>
+                                                <div class="header__navbar-action__icon-modal-cart__content-link__items-content">
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title">
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-text">
+                                                            <p>Bộ xét nghiệm</p>
+                                                            <p>Mô tả</p>
+                                                        </div>
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close">
+                                                            <i class="fa-solid fa-xmark header__navbar-action__icon-modal-cart__content-link__items-content-title-icon-close-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price">
+                                                        <!-- <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-input"> -->
+                                                        <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-minus
+                                                             header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </div>
+                                                            <input type="number" class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-value">
+                                                            <div class="header__navbar-action__icon-modal-cart__content-link__items-content-price-number-add 
+                                                            header__navbar-action__icon-modal-cart__content-link__items-content-price-number-count">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span class="header__navbar-action__icon-modal-cart__content-link__items-content-price-modify">
+                                                            2.121.000đ
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__navbar-action__icon-modal-cart__footer">
+                                <div class="header__navbar-action__icon-modal-cart__footer-total">
+                                    <p>Tổng cộng:</p>
+                                    <span>10.600.00đ</span>
+                                </div>
+                                <div class="header__navbar-action__icon-modal-cart__footer-btn">
+                                    <a href="./Manager_bill.html">
+                                        <button class="header__navbar-action__icon-modal-cart__footer-btn-items header__navbar-action__icon-modal-cart__footer-btn-seenCart">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </a>
+                                    <a href="./login.html">
+                                        <button class="header__navbar-action__icon-modal-cart__footer-btn-items header__navbar-action__icon-modal-cart__footer-btn-login">
+                                            Đăng nhập
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="conatiner">
+           <div class="grid wide">
+               <div class="container__login">
+
+                   <div class="row">
+                       <div class="col l-6 m-12 c-12">
+                           <div class="container__login-input">
+                               <div class="container__login-input-header">
+                                   <h1>Bạn đã có tài khoản Y Khoa?</h1>
+                                   <p>Nếu bạn đã có tài khoản, hãy đăng nhập để tích luỹ điểm thành</p>
+                                   <p>viên và tiếp nhận được những ưu đãi tốt hơn!</p>
+                               </div>
+                               <div class="container__login-input-action">
+                                   <div class="container__login-input-action__input">
+                                       <input type="text" placeholder="Email/SDT">
+                                   </div>
+                                   <div class="container__login-input-action__input container__login-input-action__input-pass">
+                                       <input type="password" placeholder="Mật khẩu" class="password">
+                                       <i class="fa-regular fa-eye  icon-eye-pass"></i>
+                                       <i class="fa-regular fa-eye-slash icon-eye-pass "></i>
+                                   </div>
+                                   <div class="container__login-input-action__remember">
+                                       <input type="checkbox">
+                                       <p>Ghi nhớ đăng nhập</p>
+                                   </div>
+                                   <div class="container__login-input-action__forget">
+                                       <a href="">Quên mật khẩu?</a>
+                                   </div>
+                                   <button class="container__login-input-action__btn">Đăng nhập</button>
+                               </div>
+       
+                           </div>
+                       </div>
+                       <div class="col l-6 m-12 c-12">
+                           <div class="container__login-modify  ">
+                               <div class="container__login-input-header">
+                                   <h1>Khách hàng mới của Y Khoa</h1>
+                                   <p>Nếu bạn chưa có tài khoản trên ivymoda.com, hãy sử dụng tùy</p>
+                                   <p>chọn này để truy cập biểu mẫu đăng ký.</p>
+                                   <p>Bằng cách cung cấp cho IVY moda thông tin chi tiết của bạn,</p>
+                                   <p>quá trình mua hàng trên ivymoda.com sẽ là một trải nghiệm </p>
+                                   <p>thú vị và nhanh chóng hơn!</p>
+                                </div>
+                                <button class="container__login-input-action__btn-register">Đăng ký</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-title">
+                            <h1>DỤNG CỤ Y TẾ TÂM PHÚC</h1>
+                            <p>Địa chỉ: 73 Nguyễn Huệ P2 TP Vĩnh Long</p>
+                            <p>Hotline: 0704825932</p>
+                            <p>Email: 20004154@st.vlute.edu.vn</p>
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-title">
+                            <h1>KIẾN THỨC Y KHOA</h1>
+                            <a href="" class="footer-title_link">Bện đau mắt đỏ, Nguyên nhân & Phân biệt</a>
+                            <a href="" class="footer-title_link">Các dấu hiệu cảnh báo sớm chân tay miệng trở nặng</a>
+                            <a href="" class="footer-title_link">Các mốc khám thai quan trọng trong suốt thai kỳ các mẹ bầu cần biêt</a>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-title">
+                            <h1>CHÍNH SÁCH VÀ PHƯƠNG THỨC</h1>
+                            <a href="" class="footer-title_link footer-title_link_pt ">Chính sách bảo hành</a>
+                            <a href="" class="footer-title_link footer-title_link_pt">Chính sách mua hàng</a>
+                            <a href="" class="footer-title_link footer-title_link_pt">Chính sách vận chuyển</a>
+                            <a href="" class="footer-title_link footer-title_link_pt">Chính sách đổi trả</a>
+                            <a href="" class="footer-title_link footer-title_link_pt">Phương thức thanh toán</a>
+                            <a href="" class="footer-title_link footer-title_link_pt">Chính sách bảo mật</a>
+                           
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                          <div class="footer-title">
+                            <h1>LIÊN HỆ</h1>
+                            <div class="footer-address">
+                                <iframe src="
+                                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.144156168644!2d105.95962111461775!3d10.249955392680075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a82ce4144a215%3A0xf0fc3e5271c09ba7!2zNzMgTmd1eeG7hW4gSHXhu4csIFBoxrDhu51uZyAyLCBWxKluaCBMb25nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1664814557442!5m2!1svi!2s" 
+                                width="100%" height="140" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                >
+                                </iframe>   
+
+                            </div>
+                            <p>Kết nối với chúng tôi</p>
+                            <div class="footer-network">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+<script src="./JS/main.js"></script>
+<script>
+    const showPass = document.querySelector('.fa-eye-slash');
+    const closePass = document.querySelector('.fa-eye');
+    const formInput = document.querySelector('.password');
+
+    // Hiện pass
+    showPass.onclick = function() {
+        showPass.classList.add('close');
+        closePass.classList.add('show')
+        formInput.setAttribute('type','text');
+        
+    }
+
+    // Ẩn pass
+    closePass.onclick = function() {
+        showPass.classList.remove('close');
+        closePass.classList.remove('show');
+        formInput.setAttribute('type','password');
+    }
+
+
+</script>
+</html>

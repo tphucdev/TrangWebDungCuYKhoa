@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-ColorP: #6C6D70;
+    --text-Color: #221F20;
+    --hover-ColorText: #AC2F33;
+    --hover-Color: #221F20;
+    --boder: #ebeaea;
+}
+
+#root{
+    position: relative;
+}
+
+/* Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #cdcccc;
+    border-radius: 14px;
+}
+
+
+.navbar{
+    width: 100%;
+    background: #fff	;
+    min-height: 100vh;
+    padding: 30px 20px;
+    border: 1px solid var(--boder);
+    border-radius: 66px 0;
+}
+
+.navbar h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--boder);
+    color: var(--text-Color);
+}
+
+.navbar ul{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navbar-li{
+    list-style: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-li.active_this{
+    background-color: #69afdb;
+}
+
+.navbar-li:hover{
+    background-color: #d8d7d799;
+}
+
+.navbar-li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--text-ColorP);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 24px 16px;
+}
+
+.navbar ul li a i{
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.navbar ul li a:hover{
+    color: var(--hover-Color);
+}
+
+/* Quản lý tài khoản */
+.container__account{
+    width: 100%;
+}
+
+.container__account h1{
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-Color);
+    padding: 30px 0 ;
+}
+
+.container__account table{
+    width: 100%;
+    text-align: left;
+}
+
+.container__account table th{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--text-ColorP);
+    padding: 20px 0;
+    border-top: 1px solid var(--boder);
+    border-bottom: 1px solid var(--boder);
+}
+
+.container__account table tbody td{
+    padding: 20px 0;
+    font-size: 16px;
+    color: var(--text-Color);
+}
+
+.container__account-btn {
+    width: 100%;
+}
+
+.container__account-btn-update{
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 30px;
+    width: 60px;
+    border: 1px solid var(--text-Color);
+    border-radius: 16px 0;
+    background-color: var(--hover-Color);
+    color: #fff;
+}
+
+.container__account-btn-update:hover{
+    color: var(--hover-Color);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.container__account-btn-delete{
+    color: var(--hover-Color);
+    background-color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 30px;
+    width: 60px;
+    border: 1px solid var(--text-Color);
+    border-radius: 16px 0;
+    margin-left: 10px;
+}
+
+.container__account-btn-delete:hover{
+    color: #fff;
+    background-color: var(--hover-Color);
+    cursor: pointer;
+}
+
+/* Quản lý nhân viên */
+
+.container__staff-table{
+    width: 100%;
+    max-height: 550px;
+    overflow: scroll;
+}
+
+.container__staff-table::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+.container__staff-table::-webkit-scrollbar-thumb{
+    background-color: var(--boder);
+    border-radius: 16px;
+}
+
+
+.container__staff-table table tbody td{
+    padding: 4px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--boder);
+    text-align: left;
+}
+
+
+
+.container__staff-img{
+    width: 94.48px;
+    height: 132. 28px;
+    object-fit: contain;
+}
+
+.container__staff-search{
+    width: 500px;
+    height: 50px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid var(--boder);
+    margin-left: 10px;
+}
+
+.container__staff-search input{
+    width: 92%;
+    height: 100%;
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    outline: none;
+    color: var(--hover-Color);
+}
+
+.container__staff-search i{
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--text-ColorP);
+}
+
+.container__staff-search i:hover{
+    color: var(--text-Color);
+}
+
+.container__staff-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container__staff-add{
+    margin-left: 30px;
+}
+
+.container__staff-add-btn{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--hover-Color);
+    border: 1px solid var(--hover-Color);
+    border-radius: 16px 0;
+}
+
+.container__staff-add-btn div{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.container__staff-add-btn div i{
+    color: #fff;
+    font-size: 12px;
+}
+
+.container__staff-add-btn:hover{
+    background-color: #fff;
+    color: var(--hover-Color);
+    cursor: pointer;
+}
+
+.container__staff-add:hover .container__staff-add-btn div{
+    border: 1px solid var(--hover-Color);
+}
+
+.container__staff-add:hover .container__staff-add-btn div i{
+    color: var(--hover-Color);
+}
+
+/* Modal Thêm Nhân Viên */
+@keyframes fadeInShow{
+    from{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container__staff-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.container__staff-modal-main{
+    width: 700px;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 50px;
+    position: relative;
+    animation: fadeInShow linear 0.4s;
+
+}
+
+.container__staff-modal-main h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--hover-Color);
+    margin-bottom: 50px;
+}
+
+.container__staff-modal-main-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__staff-modal-main-input input{
+    width: 280px;
+    height:50px;
+    margin-bottom: 20px;
+    border: 1px solid var(--boder);
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: var(--text-Color);
+    outline: none;
+}
+
+.container__staff-modal-main-input-full input{
+    width: 100%;
+}
+
+.container__staff-modal-main-btn{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid var(--hover-Color);
+    border-radius: 16px 0;
+    background-color: var(--hover-Color);
+}
+
+.container__staff-modal-main-btn:hover{
+    background-color: #fff;
+    color: var(--hover-Color);
+    cursor: pointer;
+}
+
+.icon-close-addStaff{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 24px;
+    color: var(--text-ColorP);
+}
+
+.icon-close-addStaff:hover{
+    color: var(--hover-Color);
+    cursor: pointer;
+}
+
+.open{
+    display: flex;
+}
+
+/* Quản Lý Danh Mục Sản Phẩm */
+
+.container__derectory-table table tr td{
+    padding: 20px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.container__derectory-add{
+    width: 100%;
+    text-align: center;
+    margin-top: 130px;
+    padding: 30px 30px;
+    border: 1px solid var(--boder);
+    border-radius: 26px 0;
+}
+
+.container__derectory-add h1{
+    font-size: 24px;
+    text-transform: uppercase ;
+    padding-bottom: 50px;
+}
+
+.container__derectory-add input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--boder);
+    border-radius: 4px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--hover-Color);
+
+}
+
+.container__derectory-add-btn{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--hover-Color);
+    outline: none;
+    border-radius: 16px 0;
+    margin-top: 20px;
+    background-color: var(--hover-Color);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.container__derectory-add-btn:hover{
+    background-color: #fff;
+    color: var(--hover-Color);
+    cursor: pointer;
+}
+
+.container__staff-modal-main-input-label-genders{
+    font-size: 22px;
+}
+
+.container__staff-modal-main-input-gender{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
